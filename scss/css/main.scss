@@ -7,7 +7,7 @@ body {
     font-size: $parrent-fontsize;
     font-family: $font-primary;
     font-style: $fontstyle-primary;
-    color: $clr-font-primary;
+    color: white;
 
     background-color: $clr-bg;
 }
@@ -29,6 +29,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 100px;
 }
 
 .testimonials {
@@ -37,7 +39,10 @@ p {
     grid-template-rows: repeat(auto-fill, 1fr);
     gap: calc($parrent-fontsize * 2);
 
-    .block { border-radius: 10px; }
+    .block { 
+        border-radius: 10px; 
+        box-shadow: 1px 1px 0px hsl(0, 0%, 81%);
+    }
 
     #number-1 { background-color:$clr-primary-violet; }
     #number-2 { background-color:$clr-primary-gray; }
